@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{19210F03-4414-FA53-FF0C-654F249EAE3F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_2;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>E:/Applications/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>E:/Applications/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ArrowPhysics.cs" />
+     <Compile Include="Assets\Clock\Scripts\Clock.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\BookPage.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\BookPageManager.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\BookPageType.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\CraftButtonController.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\CraftingMenuController.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\NavigationButtonController.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\Recipe.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\RecipePageController.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\RecipePageIngredient.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\TableOfContents.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\TableOfContentsPageController.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Crafting\TableOfContentsRecipe.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\InterfaceBackdropController.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\InterfaceController.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\InterfaceWindowTilt.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryAnimation.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryBackpack.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryController.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryGUIButtonSet.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryGUIConsumeButton.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryGUIDestroyButton.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryGUIEquipButton.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryGUIItem.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryGUIItemManager.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryGUIItemMenu.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryGUIItemMenuStats.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryGUIUseButton.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\Inventory\InventoryItemAction.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\ItemEvents\ItemEvent.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Interface\ItemEvents\ItemEventsController.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Crafting\Scripts\InventoryCheats.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Items\ConsumableItemBehavior.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Items\DestroyableItemBehavior.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Items\EquipableItemBehavior.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Items\IItem.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Items\IItemBehavior.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Items\Item.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Items\ItemBehaviorType.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Items\ItemManager.cs" />
+     <Compile Include="Assets\Crafting\Scripts\Items\UseableItemBehavior.cs" />
+     <Compile Include="Assets\Crafting\Stats\StatController.cs" />
+     <Compile Include="Assets\Crafting\Stats\StatsController.cs" />
+     <Compile Include="Assets\Crafting\Stats\WatchController.cs" />
+     <Compile Include="Assets\Credits\CreditsController.cs" />
+     <Compile Include="Assets\CutSceneController.cs" />
+     <Compile Include="Assets\HallucinationBehavior.cs" />
+     <Compile Include="Assets\LoadingScreen.cs" />
+     <Compile Include="Assets\Models\fire\flickeringLight.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\ChaseAttackPrey.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\DinosaurMovement.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\EvadePredators.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\FlockController.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\FlockingBehavior.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\FoodChain.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\HerdAI.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\PackAI.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\RaptorAI.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\Retaliate.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\TRexAITest.cs" />
+     <Compile Include="Assets\Scripts\AddBuoyancy.cs" />
+     <Compile Include="Assets\Scripts\AttributionLogoController.cs" />
+     <Compile Include="Assets\Scripts\AttributionLogosStageController.cs" />
+     <Compile Include="Assets\Scripts\AxPickup.cs" />
+     <Compile Include="Assets\Scripts\AxSway.cs" />
+     <Compile Include="Assets\Scripts\AxSwing.cs" />
+     <Compile Include="Assets\Scripts\BearSpawnerController.cs" />
+     <Compile Include="Assets\Scripts\CameraShake.cs" />
+     <Compile Include="Assets\Scripts\CollisionSoundTest.cs" />
+     <Compile Include="Assets\Scripts\Console.cs" />
+     <Compile Include="Assets\Scripts\DayNightController.cs" />
+     <Compile Include="Assets\Scripts\DemoSceneChange.cs" />
+     <Compile Include="Assets\Scripts\DevelopersStageController.cs" />
+     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\Environment Scripts\BeachRock.cs" />
+     <Compile Include="Assets\Scripts\Environment Scripts\Bush.cs" />
+     <Compile Include="Assets\Scripts\Environment Scripts\Driftwood.cs" />
+     <Compile Include="Assets\Scripts\Environment Scripts\SpawnedItem.cs" />
+     <Compile Include="Assets\Scripts\EquipInfo.cs" />
+     <Compile Include="Assets\Scripts\FallingBear.cs" />
+     <Compile Include="Assets\Scripts\FallingBearLogoController.cs" />
+     <Compile Include="Assets\Scripts\FallingBearLogoStageController.cs" />
+     <Compile Include="Assets\Scripts\HeadBobbing.cs" />
+     <Compile Include="Assets\Scripts\HealthController.cs" />
+     <Compile Include="Assets\Scripts\ItemHover.cs" />
+     <Compile Include="Assets\Scripts\ItemInfo.cs" />
+     <Compile Include="Assets\Scripts\ItemPickUp.cs" />
+     <Compile Include="Assets\Scripts\LetterBoxController.cs" />
+     <Compile Include="Assets\Scripts\LoadingCameraFaderController.cs" />
+     <Compile Include="Assets\Scripts\LoadingSceneController.cs" />
+     <Compile Include="Assets\Scripts\LodObject.cs" />
+     <Compile Include="Assets\Scripts\LodSystem.cs" />
+     <Compile Include="Assets\Scripts\MentalCheck.cs" />
+     <Compile Include="Assets\Scripts\Menu Scripts\GameOverGUI.cs" />
+     <Compile Include="Assets\Scripts\Menu Scripts\WinGUI.cs" />
+     <Compile Include="Assets\Scripts\MenuCursor.cs" />
+     <Compile Include="Assets\Scripts\MoonController.cs" />
+     <Compile Include="Assets\Scripts\Ocean.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\ArrowCollision.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\EquipableItem.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerDropController.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\Score.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerCrosshair.cs" />
+     <Compile Include="Assets\Scripts\PlayerCrouch.cs" />
+     <Compile Include="Assets\Scripts\PlayerCursor.cs" />
+     <Compile Include="Assets\Scripts\PlayerEquip.cs" />
+     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\PlayerRun.cs" />
+     <Compile Include="Assets\Scripts\PlayerWalkSound.cs" />
+     <Compile Include="Assets\Scripts\Raft\RaftController.cs" />
+     <Compile Include="Assets\Scripts\Sector.cs" />
+     <Compile Include="Assets\Scripts\SmoothFollow.cs" />
+     <Compile Include="Assets\Scripts\StartMenuGUI.cs" />
+     <Compile Include="Assets\Scripts\StartMenuGUIRevamped.cs" />
+     <Compile Include="Assets\Scripts\StartMenuText.cs" />
+     <Compile Include="Assets\Scripts\StartupEventManager.cs" />
+     <Compile Include="Assets\Scripts\StartupStage.cs" />
+     <Compile Include="Assets\Scripts\SunMovement.cs" />
+     <Compile Include="Assets\Scripts\Test\DropItem[Deprecated].cs" />
+     <Compile Include="Assets\Scripts\Test\WaitBeforeBurn.cs" />
+     <Compile Include="Assets\Scripts\TreeInteraction.cs" />
+     <Compile Include="Assets\Scripts\TreeReactions.cs" />
+     <Compile Include="Assets\Scripts\TreeSpawner.cs" />
+     <Compile Include="Assets\Scripts\TvFlicker.cs" />
+     <Compile Include="Assets\Scripts\WeaponSwapper.cs" />
+     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
+     <Compile Include="Assets\SinkingPlane.cs" />
+     <Compile Include="Assets\SkyBoxController.cs" />
+     <Compile Include="Assets\TerrainGenerator.cs" />
+     <Compile Include="Assets\Utilities\SimpleJSON.cs" />
+     <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
+     <None Include="Assets\Cartoony Weapon Pack\Readme.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Shaders\OceanWireframeIndie.shader" />
+     <None Include="Assets\XInputDotNet\MITLicense.txt" />
+     <None Include="Assets\Shaders\OceanIndie.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Shaders\BlendedSkyBox.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Shaders\self_illuminated_outlined_diffuse_113.shader" />
+     <None Include="Assets\Models\kitchen\archibase.net.txt" />
+     <None Include="Assets\Shaders\Outlined Diffuse.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Models\self_illuminated_outlined_diffuse_113.shader" />
+     <None Include="Assets\Resources\Outlined Diffuse.shader" />
+     <None Include="Assets\Models\Fridge\archibase.net.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{E339AA7B-CA9A-807C-981A-34B280CF66CB}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{07FC6D0A-CDC2-B394-CC47-8AEF12C6C410}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
